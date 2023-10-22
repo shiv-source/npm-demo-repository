@@ -6,8 +6,8 @@ module.exports = {
   transform: {
     "^.+\\.ts?$": "ts-jest",
   },
-  rootDir : "./__test__",
+  rootDir : "./test",
   verbose: true,
   testPathIgnorePatterns: ["./node_modules/", "./dist/", "./src/"],
-  testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$',
+  testRegex: '(/tests/.*|(\\.|/)(test|spec))\\.tsx?$',
 };
