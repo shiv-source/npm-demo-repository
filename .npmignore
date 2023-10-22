@@ -1,6 +1,9 @@
 .github
+node_modules
 src
 test
+.gitignore
+.nvmrc
 jest.config.js
-tsconfig.json
 pnpm-lock.yaml
+tsconfig.json
