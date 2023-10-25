@@ -43,7 +43,7 @@ jobs:
 
   release:
     needs: [test, build]
-    name: Release
+    name: Releasing code
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -64,7 +64,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm install
-      - name: Release
+      - run: npm run build
+      - name: Release to GITHUB and NPM
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
