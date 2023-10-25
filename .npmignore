@@ -1,9 +1,3 @@
-.github
-node_modules
-src
-test
-.gitignore
-.nvmrc
-jest.config.js
-pnpm-lock.yaml
-tsconfig.json
+**
+
+!dist/**
