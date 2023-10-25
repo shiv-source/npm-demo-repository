@@ -29,7 +29,7 @@ jobs:
 
   build:
     needs: test
-    name: "Build Source code"
+    name: "Building source code"
     runs-on: ubuntu-latest
     strategy:
       matrix:
