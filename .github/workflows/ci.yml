@@ -27,7 +27,7 @@ jobs:
       - run: pnpm install
       - run: pnpm test
 
-  publish:
+  build:
     needs: test
     name: "NPM Publish"
     runs-on: ubuntu-latest
@@ -47,6 +47,8 @@ jobs:
           registry-url: "https://registry.npmjs.org"
       - run: pnpm install
       - run: pnpm build
-      - run: npm publish --access public
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+
+  release:
+    name: Release
+    needs: [test, build]
+    uses: ./release.yml
