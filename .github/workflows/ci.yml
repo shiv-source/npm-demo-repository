@@ -51,4 +51,4 @@ jobs:
   release:
     name: Release
     needs: [test, build]
-    uses: ./release.yml
+    uses: ./.github/workflows/release.yaml
