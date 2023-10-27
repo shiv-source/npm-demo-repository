@@ -6,6 +6,8 @@ export function multiply(x: number, y: number): number {
   console.log(x);
   console.log(y);
   console.log("kjhjhkl")
+  console.log("kjhjhkl")
+  console.log("kjhjhkl")
   return x * y;
 }
 // perf(pencil): remove graphiteWidth option
