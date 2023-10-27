@@ -8,9 +8,10 @@ export function multiply(x: number, y: number): number {
   console.log("kjhjhkl")
   console.log("kjhjhkl")
   console.log("kjhjhkl")
+  console.log("sfgsdfdsfsd sdfsd dfsdfd12")
   return x * y;
 }
-// perf(pencil): remove graphiteWidth option
+// perf: remove graphiteWidth option
 
 // BREAKING CHANGE: The graphiteWidth option has been removed.
-// The default graphite width of 10mm is always used for performance reasons.
+// The default graphite width of 10mm is always used for performance reasons
