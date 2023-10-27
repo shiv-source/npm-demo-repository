@@ -30,6 +30,7 @@
   "homepage": "https://github.com/shiv-source/npm-demo-repository#readme",
   "license": "MIT",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
     "@types/jest": "^29.5.6",
     "@types/node": "^20.8.7",
     "jest": "^29.7.0",
@@ -39,5 +40,8 @@
   },
   "engines": {
     "node": ">=10"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
   }
 }

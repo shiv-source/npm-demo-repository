@@ -8,7 +8,7 @@ export function multiply(x: number, y: number): number {
   console.log("kjhjhkl")
   console.log("kjhjhkl")
   console.log("kjhjhkl")
-  console.log("sfgsdfdsfsd sdfsd dfsdfd12")
+
   return x * y;
 }
 // perf: remove graphiteWidth option
